@@ -62,3 +62,15 @@ pkill -f "bluetoothd -P input"
 
 # 恢复系统默认的 bluetoothd
 systemctl restart bluetooth 2>/dev/null || bluetoothd &
+
+
+在机器人bash执行
+export ROS_DOMAIN_ID=14
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+export CYCLONEDDS_URI='<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="wlp0s20f3"/></Interfaces></General><Discovery><Peers><Peer address="192.168.2.238"/></Peers><ParticipantIndex>auto</ParticipantIndex></Discovery></Domain></CycloneDDS>'
+
+
+在笔记本bash执行
+export ROS_DOMAIN_ID=14
+export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
+export CYCLONEDDS_URI='<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="wlp129s0f0"/></Interfaces></General><Discovery><Peers><Peer address="192.168.2.213"/></Peers><ParticipantIndex>auto</ParticipantIndex></Discovery></Domain></CycloneDDS>'
