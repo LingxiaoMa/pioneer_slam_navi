@@ -74,3 +74,7 @@ export CYCLONEDDS_URI='<CycloneDDS><Domain><General><Interfaces><NetworkInterfac
 export ROS_DOMAIN_ID=14
 export RMW_IMPLEMENTATION=rmw_cyclonedds_cpp
 export CYCLONEDDS_URI='<CycloneDDS><Domain><General><Interfaces><NetworkInterface name="wlp129s0f0"/></Interfaces></General><Discovery><Peers><Peer address="192.168.2.213"/></Peers><ParticipantIndex>auto</ParticipantIndex></Discovery></Domain></CycloneDDS>'
+
+
+SLAM启动
+ros2 launch slam_toolbox online_async_launch.py   use_sim_time:=false   slam_params_file:=Mobile_Robot_Poineer/src/pioneer_robot/config/slam_params2.yaml
